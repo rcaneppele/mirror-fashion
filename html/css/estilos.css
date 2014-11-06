@@ -267,24 +267,3 @@ footer .container {
 .painel button:hover:after {
 	border-top-color: #393939;
 }
-
-input:invalid {
-	outline: 1px solid #c00;
-}
-
-input:invalid:after {
-	content: 'Erro';
-	display: block;
-	width: 55px;
-	height: 55px;
-}
-
-.destaque img:hover {
-	/*transform: rotate(3000deg) scale(1.5);*/
-	
-	transition: 5s ease-in;
-}
-
-.destaque img {
-	transition: 5s ease-in;
-}

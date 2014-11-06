@@ -1,0 +1,175 @@
+.cores label:after {
+    content: '';
+    display: block;
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+label[for=verde]:after {
+    background-color: #33CC66;
+}
+
+label[for=rosa]:after {
+    background-color: #FF6666;
+}
+
+label[for=azul]:after {
+    background-color: #6666FF;
+}
+
+.cores input:checked + label:after {
+    border: 6px solid rgba(0,0,0,0.3);
+}
+
+.cores label:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+}
+
+.cores input[type=radio] {
+    display: none;
+}
+
+.cores input:not(:checked) + label img {
+    display: none;
+}
+
+.cores {
+    position: relative;
+    padding-top: 80px;
+}
+
+label[for=verde]:after {
+    left: 0;
+}
+
+label[for=rosa]:after {
+    left: 60px;
+}
+
+label[for=azul]:after {
+    left: 120px;
+}
+
+.cores label img {
+    display: block;
+    max-width: 100%;
+}
+
+.produto {
+    color: #333;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+
+.produto h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.produto legend {
+    display: block;
+    font: bold 0.9em/2.5 Arial;
+    text-transform: uppercase;
+}
+
+.comprar {
+    background: #91bd3c;
+    border: none;
+    color: #333;
+
+    font-size: 1.4em;
+    text-transform: uppercase;
+
+    box-shadow: 0 1px 3px #777;
+  
+    display: block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+
+.cores label:after {
+    border: 6px solid rgba(0,0,0,0);
+    transition: 1s;
+}
+
+.cores label:hover:after {
+    border: 6px solid rgba(0,0,0,0.1);
+}
+
+output {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+@media (min-width: 630px) {
+    .produto {
+        /* a foto vai se posicionar absolutamente com relação
+        a esse elemento, por isso preciso estar posicionado
+        */
+        position: relative; 
+
+        /* deixo 40% de espaço em branco na esquerda para foto ocupar */
+        padding-left: 40%;
+    }
+
+    .cores {
+        /* eu era relative antes; reinicio para static para evitar
+        que a foto se posicione com relação a mim 
+        */
+        position: static;
+
+        /* reinicio meu padding-top que tinha antes e não preciso mais */
+        padding: 0;
+    }
+
+    .cores label img {
+        /* imagem se posiciona absolutamente à esquerda com relação ao .produto */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .cores label:after {
+        /* as bolinhas coloridas tinham posição absoluta.
+        não precisamos mais, basta flutuar uma do lado da outra */
+        position: static;
+        float: left;
+    }
+
+    .cores label img {
+        max-width: 35%;
+        max-height: 100%;
+    }
+
+    .produto {
+        font-size: 1.2em;
+    }
+
+    .cores label:after {
+        margin-right: 10px;
+    }
+
+    fieldset {
+        display: inline-block;
+        vertical-align: top;
+      
+        margin: 1em 0;
+        min-width: 200px;
+        width: 45%;
+    }
+}

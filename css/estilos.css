@@ -1,0 +1,290 @@
+body {
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+header {
+	position: relative;
+}
+
+.sacola {
+	background: url(../img/sacola.png) no-repeat top right;
+
+	width: 140px;
+	font-size: 14px;
+	text-align: right;
+	padding-right: 35px;
+	padding-top: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.menu-opcoes {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.menu-opcoes ul {
+	font-size: 15px;
+}
+
+.menu-opcoes ul li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.menu-opcoes a {
+	color: #003366;
+}
+
+.busca, 
+.menu-departamentos {
+	background-color: #dcdcdc;
+	font-weight: bold;
+	text-transform: uppercase;  
+	
+	width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+	margin: 10px;
+}
+
+.menu-departamentos li {
+	background-color: white;
+	margin-bottom: 1px;
+	padding: 5px 10px;
+}
+
+.menu-departamentos a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.busca input {
+	vertical-align: middle;
+}
+
+.busca input[type=search] {
+	width: 170px;
+}
+
+.busca, 
+.menu-departamentos {
+	float: left;
+}
+
+.menu-departamentos {
+	margin-top: 10px;
+	padding-bottom: 10px;
+	clear: left;
+}
+
+.destaque {
+	margin-top: 10px;
+}
+
+.destaque img {
+	margin-left: 10px;
+}
+
+.painel {
+	margin: 10px 0;
+	padding: 10px;
+	width: 445px;
+}
+
+.novidades {
+	float: left;
+	background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+	float: right;
+	background-color: #dcdcf5;
+}
+
+.painel li {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+
+	margin: 2px;
+	padding-bottom: 10px;
+}
+
+.painel h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-bottom: 10px;
+}
+
+.painel a {
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
+}
+
+footer .container {
+	position: relative;
+}
+
+.social {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+.social li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.social li a {
+	height: 32px;
+	width: 32px;
+
+	display: block;
+	text-indent: -99999px;  
+}
+
+.social a[href*="facebook"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus"] {
+	background-image: url(../img/googleplus.png);
+}
+
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.painel h2:before {
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
+}
+
+.novidades {
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos {
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel button {
+	display: none;
+}
+
+.painel-compacto li:nth-child(n+7) {
+	display: none;
+}
+
+.painel-compacto button {
+	display: block;
+}
+
+.painel button {
+	/* posicionamento */
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+
+	/* estilo */
+	background-color: #333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30,30,30,0.5);
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+
+	/* animação*/
+	transition: 0.3s;
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 1px 0 20px rgba(200,200,120,0.9);
+}
+
+.painel button {
+	color: white;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.painel button:after {
+	/* elemento vazio */
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+
+	/* triangulo */
+	border-top: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	/* posicionamento */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+
+	/* animação */
+	transition: 0.3s;
+}
+
+.painel button:hover:after {
+	border-top-color: #393939;
+}
+
+input:invalid {
+	outline: 1px solid #c00;
+}
+
+input:invalid:after {
+	content: 'Erro';
+	display: block;
+	width: 55px;
+	height: 55px;
+}
+
+.destaque img:hover {
+	/*transform: rotate(3000deg) scale(1.5);*/
+	
+	transition: 5s ease-in;
+}
+
+.destaque img {
+	transition: 5s ease-in;
+}

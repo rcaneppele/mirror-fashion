@@ -1,0 +1,32 @@
+.header {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.header-logo {
+	text-align: center;
+}
+
+	.header-logo-image {
+		max-width: 50%;
+	}
+
+.header-sacola {
+	background: url('../../img/sacola.png') no-repeat top right;
+	min-height: 35px;
+	padding-right: 35px;
+	padding-top: 20px;
+	text-align: right;
+}
+
+.header-menu {
+	text-align: center;
+}
+
+	.header-menu-item {
+		display: inline;
+		line-height: 1.8;
+		list-style: none;
+		margin: 5px;
+		
+	}

@@ -6,25 +6,25 @@
 	width: 90%;
 }
 
-.busca-titulo {
-	font-size: 1em;
-	margin-bottom: 0;
-	padding-left: 10px;
-	text-transform: uppercase;
-}
+	.busca-titulo {
+		font-size: 1em;
+		margin-bottom: 0;
+		padding-left: 10px;
+		text-transform: uppercase;
+	}
 
-.busca-form {
-	padding: 10px;
-	text-transform: uppercase;
-}
+	.busca-form {
+		padding: 10px;
+		text-transform: uppercase;
+	}
 
-.busca-form-campoBusca {
-	border-radius: 5px;
-	min-width: 170px;
-	outline: none;
-	vertical-align: middle;
-}
+		.busca-form-campoBusca {
+			border-radius: 5px;
+			min-width: 170px;
+			outline: none;
+			vertical-align: middle;
+		}
 
-.busca-form-lupa {
-	vertical-align: middle;
-}
+		.busca-form-lupa {
+			vertical-align: middle;
+		}

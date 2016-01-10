@@ -6,27 +6,27 @@
 	width: 90%;
 }
 
-.menuDepartamentos-titulo {
-	font-size: 1em;
-	margin-bottom: 0;
-	padding-left: 10px;
-	text-transform: uppercase;
-}
+	.menuDepartamentos-titulo {
+		font-size: 1em;
+		margin-bottom: 0;
+		padding-left: 10px;
+		text-transform: uppercase;
+	}
 
-.menuDepartamentos-list {
-	padding: 0;
-}
+	.menuDepartamentos-list {
+		padding: 0;
+	}
 
-.menuDepartamentos-list-item {
-	background-color: #ffffff;
-	list-style: none;
-	margin-bottom: 2px;
-	padding: 5px;
-	text-transform: uppercase;
-}
+		.menuDepartamentos-list-item {
+			background-color: #ffffff;
+			list-style: none;
+			margin-bottom: 2px;
+			padding: 5px;
+			text-transform: uppercase;
+		}
 
-.menuDepartamentos-list-item-link {
-	color: #000000;
-	font-weight: bold;
-	text-decoration: none;
-}
+			.menuDepartamentos-list-item-link {
+				color: #000000;
+				font-weight: bold;
+				text-decoration: none;
+			}

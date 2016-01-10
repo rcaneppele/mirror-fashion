@@ -24,9 +24,38 @@
 	text-align: center;
 }
 
-	.header-menu-item {
+	.header-menu-list-item {
 		display: inline;
 		line-height: 1.8;
 		list-style: none;
 		margin: 5px;
 	}
+
+@media(min-width:600px) {
+	.header {
+		position: relative;
+	}
+	
+	.header-logo {
+		text-align: left;
+	}
+	
+	.header-sacola {
+		margin-top: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
+@media(min-width:800px) {
+	.header-menu-list {
+		margin: 0;
+	}
+	
+	.header-menu {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}

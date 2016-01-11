@@ -1,5 +1,6 @@
 @import url('libs/normalize.min.css');
 @import url('componentes/header.css');
+@import url('componentes/destaqueHome.css');
 @import url('componentes/busca.css');
 @import url('componentes/menuDepartamentos.css');
 @import url('componentes/fotoPromocao.css');

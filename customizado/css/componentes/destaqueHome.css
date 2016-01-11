@@ -1,4 +1,26 @@
 .destaque {
+	margin: 5px auto;
 	width: 90%;
-	margin: 0 auto;
+}
+	
+	.destaque-busca {
+		margin: 5px 0;
+	}
+
+	.destaque-menuDepartamentos {
+		margin: 5px 0;
+	}
+
+@media(min-width:800px) {
+	.destaque-buscaComMenuDepartamentos {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+	}
+	
+	.destaque-fotoPromocao {
+		display: inline-block;
+		margin: 5px 0;
+		width: 65%;
+	}	
 }

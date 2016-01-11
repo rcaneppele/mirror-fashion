@@ -15,12 +15,12 @@
 	.destaque-buscaComMenuDepartamentos {
 		display: inline-block;
 		vertical-align: top;
-		width: 33%;
+		width: 39%;
 	}
 	
 	.destaque-fotoPromocao {
 		display: inline-block;
 		margin: 5px 0;
-		width: 65%;
+		width: 60%;
 	}	
 }
